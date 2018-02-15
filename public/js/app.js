@@ -1,16 +1,10 @@
-// function loadingPersons() {
-//   for (let j = 1; j <= 87; j++) {
-//     let f = i;
-//     getPeople();
-//   };
-// };
-
-let img = document.getElementById('actor-image');
+let img = document.querySelector('.actor-image');
 console.log(img);
 
 img.addEventListener('click', openModal);
 
 function openModal(event) {
+  event.preventDefault();
   console.log('click');
   console.log(event.target.alt);
   let actorName = event.target.alt;
@@ -58,33 +52,3 @@ function openModal(event) {
       });
   }
 }
-  
-// var url = "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&gallery_id=72157692658085004&api_key=3823031f80a01564d3c4dd363c1108b2"
-//  function getPhotos() {
-//    const xhr = new XMLHttpRequest();
-//    xhr.open('GET', "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&gallery_id=72157692658085004&api_key=3823031f80a01564d3c4dd363c1108b2");
-//    xhr.onload = addPhotos;
-//    xhr.send();
-//  }
-
-//  function addPhotos() {
-//   const data = JSON.parse(this.responseText);
-//   console.log(data);
-//  }
-  
-
-// let button = document.querySelector('#main-btn');
-// let name = document.querySelector('#name');
-
-// button.addEventListener('click', getInfo);
-
-// function getInfo() {
-//   axios.get('https://swapi.co/api/people/1')
-//     .then(function(response) {
-//       updateInfo(response.data);
-//     });
-// }
-
-// function updateInfo(data) {
-//   name.innerText = data.name;
-// }
