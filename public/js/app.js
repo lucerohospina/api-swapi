@@ -27,23 +27,17 @@ function openModal(event) {
         if (data.name === actorName) {
           actorModal += `
           <div class="modal-header">
-          <button type="button" class="white close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">${data.name}</h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <img class="col-xs-12 col-sm-6" src="">
-            <div class="col-xs-12 col-sm-6">
-              <p class="mod-subtitle">Actores Pincipales: <span class="mod-info"></span></p>
-              <p class="mod-subtitle">Género: <span class="mod-info"></span></p>
-              <p class="mod-subtitle">Director: <span class="mod-info"></span></p>
-              <p class="mod-subtitle">Trama: <span class="mod-info"></span></p>
-              <p class="mod-subtitle">Fecha de estreno: <span class="mod-info"></span></p>
-              <p class="mod-subtitle">Duración: <span class="mod-info"></span></p>
+            <h4 class="modal-title text-center">Character Name: ${data.name}</h4>
+            <button type="button" class="white close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <img src="">
+            <div>
+              <p class="mod-subtitle">Height: ${data.height}<span class="mod-info"></span></p>
+              <p class="mod-subtitle">Year of Birth: ${data.birth_year} <span class="mod-info"></span></p>
+              <p class="mod-subtitle">Gender: ${data.gender} <span class="mod-info"></span></p>
             </div>
           </div>
-        </div>
-      <div class="modal-footer">
           `;
           document.querySelector('.modal-content').innerHTML = actorModal;
         };
