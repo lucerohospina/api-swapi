@@ -1,3 +1,16 @@
-.title-size {
-  font-size: 4em;
+body {
+  background-image: url('../assets/images/stars.jpg');
+}
+
+.font-title {
+  font-family: 'Codystar', cursive;
+}
+
+.font-modal {
+  font-family: 'Coustard', serif;
+}
+
+img {
+  width: 10em;
+  height: 10em;
 }
