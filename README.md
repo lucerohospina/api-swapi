@@ -4,7 +4,8 @@ Swapi es una app mobile friendly, en donde podrás obtener información de los p
 
 ![desktop](https://user-images.githubusercontent.com/32287019/36443631-472d04cc-1647-11e8-958a-41612748e758.png)
 
-## Desarrollado para [Laboratoria](http://laboratoria.la) 
+## Desarrollado para:
+[Laboratoria](http://laboratoria.la) 
 
 ### Vista Mobile
 
